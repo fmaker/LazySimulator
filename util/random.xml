@@ -1,0 +1,21 @@
+<!--  Simulation will run all combinations -->
+<simulation runs="10" seed="1292314998">
+	<devicelist>
+		<device file="/home/fmaker/workspace/LazySimulator/util/db/all_cam_configs.db3"/>
+	</devicelist>
+	
+	<strategylist tries="500">
+	  <strategy type="doe" random="true" doesize="128" />
+	</strategylist>
+
+	<targetlist targets="500" percent="10">
+		<target type="energy"/>
+		<target type="quality"/>
+		<target type="ratio"/>
+	</targetlist>
+
+	<outputlist>
+		<output type="logfile" delim=" " filename="/home/fmaker/workspace/LazySimulator/results/"/>
+	</outputlist>
+
+</simulation>

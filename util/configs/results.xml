@@ -1,0 +1,25 @@
+<!--  Simulation will run all combinations -->
+<simulation runs="20" seed="1292314999">
+	<devicelist>
+		<device file="../db/all_cam_configs.db3"/>
+	</devicelist>
+	
+	<strategylist tries="500">
+		<strategy type="doe" doesize="128" />
+		<strategy type="random_greedy" />
+		<strategy type="random_greedy" doesize="128" />
+		<strategy type="hill_climbing" />
+b		<strategy type="hill_climbing" doesize="128" />
+	</strategylist>
+	
+	<targetlist targets="500" percent="10">
+		<target type="energy"/>
+		<target type="quality"/>
+		<target type="ratio"/>
+	</targetlist>
+
+	<outputlist>
+		<output type="logfile" delim=" " filename="/home/fmaker/workspace/LazySimulator/results/"/>
+	</outputlist>
+
+</simulation>

@@ -1,0 +1,57 @@
+<!--  Simulation will run all combinations -->
+<simulation runs="5" seed="1292314999">
+	<devicelist>
+		<device file="db/all_cam_configs.db3"/>
+	</devicelist>
+	
+	<strategylist tries="500">
+		<strategy type="doe" limit_energy="1205.66"/>
+		<strategy type="doe" limit_energy="1205.66" doesize="128"/>
+		<strategy type="doe" onlynew="true" limit_energy="1205.66"/> 
+		<strategy type="doe" onlynew="true" limit_energy="1205.66" doesize="128"/> 
+		<strategy type="random_greedy" limit_energy="1205.66"/>
+		<strategy type="random_greedy" limit_energy="1205.66" doesize="128"/>
+		<strategy type="random_greedy" onlynew="true" limit_energy="1205.66"/> 
+		<strategy type="random_greedy" onlynew="true" limit_energy="1205.66" doesize="128"/> 
+		<strategy type="hill_climbing" limit_energy="1205.66"/>
+		<strategy type="hill_climbing" limit_energy="1205.66" doesize="128"/>
+		<strategy type="hill_climbing" onlynew="true" limit_energy="1205.66"/>
+		<strategy type="hill_climbing" onlynew="true" limit_energy="1205.66" doesize="128"/>
+		
+		<strategy type="doe" limit_energy="12056.6"/>
+		<strategy type="doe" limit_energy="12056.6" doesize="128"/>
+		<strategy type="doe" onlynew="true" limit_energy="12056.6"/> 
+		<strategy type="doe" onlynew="true" limit_energy="12056.6" doesize="128"/> 
+		<strategy type="random_greedy" limit_energy="12056.6"/>
+		<strategy type="random_greedy" limit_energy="12056.6" doesize="128"/>
+		<strategy type="random_greedy" onlynew="true" limit_energy="12056.6"/> 
+		<strategy type="random_greedy" onlynew="true" limit_energy="12056.6" doesize="128"/> 
+		<strategy type="hill_climbing" limit_energy="12056.6"/>
+		<strategy type="hill_climbing" limit_energy="12056.6" doesize="128"/>
+		<strategy type="hill_climbing" onlynew="true" limit_energy="12056.6"/>
+		<strategy type="hill_climbing" onlynew="true" limit_energy="12056.6" doesize="128"/>
+		
+		<strategy type="doe" limit_energy="120566"/>
+		<strategy type="doe" limit_energy="120566" doesize="128"/>
+		<strategy type="doe" onlynew="true" limit_energy="120566"/> 
+		<strategy type="doe" onlynew="true" limit_energy="120566" doesize="128"/> 
+		<strategy type="random_greedy" limit_energy="120566"/>
+		<strategy type="random_greedy" limit_energy="120566" doesize="128"/>
+		<strategy type="random_greedy" onlynew="true" limit_energy="120566"/> 
+		<strategy type="random_greedy" onlynew="true" limit_energy="120566" doesize="128"/> 
+		<strategy type="hill_climbing" limit_energy="120566"/>
+		<strategy type="hill_climbing" limit_energy="120566" doesize="128"/>
+		<strategy type="hill_climbing" onlynew="true" limit_energy="120566"/>
+		<strategy type="hill_climbing" onlynew="true" limit_energy="120566" doesize="128"/>
+		
+	</strategylist>
+	
+	<targetlist targets="500" percent="10">
+		<target type="ratio"/>
+	</targetlist>
+
+	<outputlist>
+		<output type="logfile" delim=" " filename="/home/fmaker/workspace/LazySimulator/results/"/>
+	</outputlist>
+
+</simulation>

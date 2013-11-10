@@ -1,0 +1,17 @@
+<simulation runs="1" seed="1292314999">
+	<devicelist>
+		<device file="/tmp/ram/all_cam_configs.db3"/>
+	</devicelist>
+	
+	<strategylist tries="500">
+		<strategy type="genetic" />
+	</strategylist>
+	
+	<targetlist targets="500" percent="10">
+		<target type="energy"/>
+	</targetlist>
+	
+	<outputlist>
+		<output type="logfile" delim=" " filename="/home/fmaker/workspace/LazySimulator/results/"/>
+	</outputlist>
+</simulation>
